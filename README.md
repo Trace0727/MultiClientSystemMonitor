@@ -33,6 +33,30 @@ Implements a multithreaded TCP client:
 
 ---
 
+## How to Run
+
+### From an IDE
+1. Open the project folder.
+2. Run `IterativeServer.java` first to start the server.
+3. Then run `MultiThreadedClient.java` to initiate client requests.
+
+### From the command line
+**In one terminal window (start the server):**
+```bash
+javac src/IterativeServer.java -d out
+java -cp out IterativeServer
+```
+
+**In a separate terminal window (run the client):**
+```bash
+javac src/MultiThreadedClient.java -d out
+java -cp out MultiThreadedClient
+```
+
+> 🔹 Make sure both are using the same port (default is 1234).
+
+---
+
 ## Future Enhancements
 - Convert the server to a fully multithreaded model for handling concurrent connections.
 - Add logging for all client requests and server responses.
